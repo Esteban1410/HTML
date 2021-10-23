@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+
+<title>Taller HTML</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+
+/* Formatear el formulario a dos columnas */
+body {
+  font: 13px/1.6 Tahoma, sans-serif;
+  background: #F5F5F5;
+}
+
+.izquierda {
+  float: left;
+  clear: left;
+}
+
+.derecha {
+  float: right;
+  clear: right;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  background: #FFF;
+  border: 1px solid silver;
+  margin: 1em auto;
+  padding: 1em;
+  width: 768px;
+}
+
+span.requerido {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #C00;
+}
+
+h2 {
+  font: normal 2em arial, sans-serif;
+  margin: 0;
+}
+
+ul li.botones {
+  border-top: 2px solid #CCC;
+  clear: both;
+  float: none;
+  padding: 1em 0;
+  margin-top: 1em;
+  text-align: right;
+  width: 100%;
+}
+
+ul li.botones input {
+  font-size: 1.3em;
+}
+
+ul li {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 46%;
+}
+
+ul li label.titulo {
+  font-weight: bold;
+}
+
+ul li div span {
+  float: left;
+  padding: 0.3em 0;
+}
+
+ul li div span.completo {
+  width: 100%;
+}
+
+ul li div span.mitad {
+  width: 50%;
+}
+
+ul li div span.tercio {
+  width: 33%;
+}
+
+ul li div span.dostercios {
+  width: 66%;
+}
+
+ul li div span label {
+  display: block;
+  font: normal 0.8em arial, sans-serif;
+  color: #333;
+}
+
+ul li p.ayuda {
+  display: none;
+}
+
+ul li input {
+  padding: 0.2em;
+}
+
+input#apellido1, input#apellido2, input#direccion, input#email {
+  width: 260px;
+}
+
+input#codigopostal {
+  width: 80px;
+}
+
+select#provincia {
+  width: 90px;
+}
+
+select#pais {
+  width: 150px;
+}
+
+input#telefonofijo, input#telefonomovil {
+  width: 135px;
+}
+
+/* Cambiar el color en el :hover y resaltar los campos en el :focus */
+ul li:hover {
+  background-color: #FF9;
+}
+
+ul li.botones:hover {
+  background-color: transparent;
+}
+
+ul li input:focus {
+  border: 2px solid #E6B700;
+}
+
+/* Formatear el formulario a una columna */
+ul li.izquierda, ul li.derecha {
+  float: none;
+  width: auto;
+}
+
+ul li {
+  overflow: hidden;
+}
+
+ul li label.titulo {
+  float: left;
+  width: 150px;
+}
+
+ul li div {
+  margin-left: 160px;
+}
+
+/* Aspecto final del formulario con los mensajes de ayuda */
+h2 {
+  margin-bottom: 0.3em;
+}
+
+ul li {
+  border-top: 1px solid #CCC;
+  margin: 0;
+  padding: 1em;
+}
+
+ul li.botones {
+  margin: 0;
+}
+
+ul li label.titulo {
+  text-align: right;
+  width: 100px;
+}
+
+ul li div {
+  margin-left: 110px;
+  overflow: hidden;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:hover p.ayuda {
+  display: block;
+  margin: 0.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+}
+
+.logo {
+    background-image: url("JEEP.jpg");
+    width: 200px; /* Definir de acuerdo al ancho de la imagen */
+    height: 200px; /* Definir de acuerdo al alto de la imagen */
+}
+</style>
+</head>
+
+<body>
+<div id="contenedor">
+
+<h2>VENDA SU CARRO</h2>
+
+<form method="post" action="#">
+<ul>
+<li class="izquierda">
+  <div>
+
+<span class="tercio">
+  Pasos a seguir:
+  <br>
+  1. Inscribase a la pàgina
+  <br>
+  2. Active su cuenta
+  <br>
+  3. Cambien su contraseña
+  <br>
+  4. Pague su paquete 
+  <br>
+  5. Registre los datos
+    </span>
+
+
+<span class="dostercios">
+	<img src="JEEP.png" width="120" height="75" />
+
+
+</span>
+
+    <span class="tercio">
+      <label for="nombre">PLACA</label>
+      <input id="nombre" name="nombre" value="" />
+    </span>
+
+    <span class="dostercios">
+      <label for="apellido1">MARCA</label>
+      <input id="apellido1" name="apellido1" value="" />
+    </span>
+
+        <span class="tercio">
+      <label for="nombre">LINEA</label>
+      <input id="nombre" name="nombre" value="" />
+    </span>
+
+    <span class="dostercios">
+      <label for="apellido1">MODELO</label>
+      <input id="apellido1" name="apellido1" value="" />
+    </span>
+    <span class="tercio">
+      <label for="nombre">CILINDRAJE</label>
+      <input id="nombre" name="nombre" value="" />
+    </span>
+
+    <span class="dostercios">
+      <label for="apellido1">COLOR</label>
+      <input id="apellido1" name="apellido1" value="" />
+    </span>
+    <span class="tercio">
+      <label for="nombre">MOTOR</label>
+      <input id="nombre" name="nombre" value="" />
+    </span>
+
+    <span class="dostercios">
+      <label for="apellido1">SERVICIO</label>
+      <input type="radio" id="huey" name="drone" value="huey" checked>
+      <label for="huey">Publico</label>
+
+      <input type="radio" id="huey" name="drone" value="huey" checked>
+      <label for="huey">Particular</label>
+
+    </span>
+
+  </div>
+
+</li>
+
+<li class="derecha">
+	<div>
+	<h4>Accesorios</h4>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Aire Acondicionado</label>
+
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Airbag</label>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Vidrios Electricos</label>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Espejos Electricos</label>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Frenos ABS</label>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Aire Acondicionado</label>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Sun roof</label>
+
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	<label for="cbox2">Automatico</label>
+
+  </div>
+
+</li>
+
+<li class="izquierda">
+<div>
+
+	<textarea name="textarea" rows="10" cols="50">Contrato de acuerdo...</textarea>
+	</div>
+	<div>
+	<label for="cbox2">Aceptar las Condiciones:</label>
+	<input type="checkbox" id="cbox2" value="second_checkbox"> 
+	</div>
+<div class="botones">
+  <input id="alta" type="submit" value="Guardar" />
+</div>
+
+<div>
+	<a href="url">Para màs informacion haga click aqui</a>
+</div>
+
+
+
+
+</li>
+
+
+
+</ul>
+</form>
+
+</div>
+</body>
+</html>
